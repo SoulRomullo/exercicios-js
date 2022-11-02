@@ -1,12 +1,15 @@
 function minimo(num1, num2) {
     // code
-    if(num1 < num2) {
-        console.log("O número menor é " + num1);
-    }else {
-        console.log("O número menor é " + num2);
+    //function min(num1, num2) {
+        if (num1 < num2) {
+            return num1;
+        }else {
+            return num2;
+        }
     }
-}
+    //console.log(min(2,1))
+//}
 
-minimo(1, 0)
+console.log(minimo(1,2))
 
 module.exports = minimo
