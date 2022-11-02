@@ -1,7 +1,7 @@
 function loop() {
     // code
     let hash = "#";
-    for (cont = 14; cont >= hash.length; cont--) {
+    for (cont = 7; cont > 0; cont--) {
         console.log(hash);
         hash += "#";
     }
