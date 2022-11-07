@@ -1,29 +1,23 @@
-/**
- * funcao isEven(n):
- *  se n é igual a 0:
- *      retorna true
- *  senao se n é igual a 1:
- *      retorna false
- *  senao:
- *      reduz 2 de n e executa a funcao novamente
- */
-
 function isEven(n) {
-    // code
-    let nao = "não";
-    let sim = "sim";
+    // validação
+    if (n === 0) {
+        console.log("Valor recebido: " + n);
+        console.log("Sua função checa: é 0 ou 1?");
+        console.log("Como a sua resposta é sim, sua função sabe o que deve ser feito");
+    } else if (n === 1) {
+        console.log("Valor recebido: " + n);
+        console.log("Sua função checa: é 0 ou 1?");
+        console.log("Como sua resposta é não, subtraimos dois e executamos novamente");
 
-    if (n % 2 === 0) {
-        console.log("Valor recebido: " + n);
-        console.log("Sua função checa: é 0 ou 1?");
-        console.log("Como a resposta é sim, sua função sabe o que deve ser feito");
+    }
+    
+    // manipulação
+    else if ( n < 0) {
+        return isEven( n + 2 )
     } else {
-        console.log("Valor recebido: " + n);
-        console.log("Sua função checa: é 0 ou 1?");
-        console.log("Como a resposta é não, subtraímos dois e executamos novamente");
+        return isEven(n - 2)
     }
 }
 
+isEven(50)
 module.exports = isEven
-
-isEven(75)
