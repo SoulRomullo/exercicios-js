@@ -8,6 +8,7 @@ function code(entries) {
     }, 0)
 
     console.log(values)
+    return values // devemos retornar a variável para a função, assim será executado 
 }
 
 const balanco = [

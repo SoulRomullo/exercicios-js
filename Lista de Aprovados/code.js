@@ -15,7 +15,7 @@ function code(entries) {
         return aprovados
     }, [])
     console.log(alunos)
-    return alunos //retorna a variável para a função
+    return alunos // devemos retornar a variável para a função, assim será executado
 }
 
 const lista = [
